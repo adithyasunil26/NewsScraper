@@ -44,8 +44,6 @@ def summarization(text):
     summary=nlargest(sumlen,sentscore,key=sentscore.get)
     summary=' '.join([word.text for word in summary])
     summary=re.sub('\n', '', summary)
-
-    print(summary)
     return summary
 
 
