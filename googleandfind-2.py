@@ -1,9 +1,16 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-#run these to install the packages if u dont have them already
-#!pip install requests
-#!pip install beautifulsoup4
+#run these in your terminal to install the packages if u dont have them already
+#pip install requests
+#pip install beautifulsoup4
+#pip install nltk
+#pip install newspaper3k
+#pip install pandas
+#pip install spacy
+#python -m spacy download en_core_web_sm
+#if u see any more missing packages just pip install them as well
+
 
 import requests
 from bs4 import BeautifulSoup
@@ -23,9 +30,6 @@ for link in resulturls:
   a=a.split('&')
   a=a.pop(0)
   k.append(a)
-
-#!pip install nltk
-#!pip install newspaper3k
 
 import nltk
 from newspaper import Article 
