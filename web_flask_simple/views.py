@@ -7,9 +7,12 @@ main = Blueprint('main', __name__)
 def search():
     return render_template('search.html')
 
-@main.route('/results', methods=['POST'])
+@main.route('/results', methods=['POST','GET'])
 def find_res():
     from .mainscr import func
-    keyword = request.form.get('comment')
-    func(keyword)
+    if request.method == "POST" :
+        keyword = request.form.get('comment')
+        func(keyword)
+        return render_template('result.html')
+    
     return render_template('result.html')
