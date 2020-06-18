@@ -12,7 +12,6 @@
 #if u see any more missing packages just pip install them as well
 
 def func(keyword):
-  from flask import redirect,url_for
   import requests
   from bs4 import BeautifulSoup
   google_results=requests.get("https://www.google.com/search?q={}&tbm=nws".format(keyword))
@@ -59,4 +58,3 @@ def func(keyword):
 
   df.to_json(r'1.json')
   df.to_csv('1.csv')
-  return redirect(url_for('main.results'))
