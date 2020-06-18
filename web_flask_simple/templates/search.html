@@ -10,7 +10,7 @@
 {% block body %}
 <div class="container">
 
-    <form class="form-signin" method="srch" action="{{ url_for('main.find_res') }}">
+    <form class="form-signin" method="POST" action="{{ url_for('main.find_res') }}">
         <h2 class="form-signin-heading">Enter Keywords</h2>
         <div class="form-group">
             <label for="comment" class="sr-only">Comment:</label>
