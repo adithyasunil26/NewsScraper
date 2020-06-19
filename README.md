@@ -1,4 +1,4 @@
-# hack-daddys
+# NewsScraper
 
 <br/>Contents:
 <br/>1)IPyNb - contains ipynb notebooks in which the scripts were created and tested
