@@ -5,6 +5,7 @@
 <br/>2)Web-flask- contains all the main files
 <br/>
 <br/>How to run:
+<br/>You can manually run the python script or do the following: 
 <br/>1)clone the repo or download as zip and extract
 <br/>2)change working directory to hack-daddys/
 <br/>3)enter the following commands into terminal
